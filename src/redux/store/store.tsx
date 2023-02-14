@@ -5,14 +5,13 @@ import courseSummaryReducer from '../reducers/courseSummaryReducer';
  
 const rootReducer = combineReducers({
   count: CountReducer,
+  courseSummary: courseSummaryReducer,
 });
 
-const store = configureStore({
+const Store = configureStore({
   reducer: {
-    count: CountReducer,
     courseSummary: courseSummaryReducer,
-
   },
 })
 
-export default store;
+export default Store;

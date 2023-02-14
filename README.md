@@ -50,7 +50,7 @@ Note: You can find the module name in the package.json file.
 You will need to install the following packages in your project.
 
 ```js
-yarn add @react-navigation/stack 
+yarn add @react-navigation/stack @react-navigation/native
 yarn add expo-modules-core expo-constants
 yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 yarn add -D jetifier

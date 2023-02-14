@@ -3,7 +3,7 @@ const initialState = {
     count: 0,
   };
    
-  export default (state = initialState, action) => {
+  export default (state = initialState, action:any) => {
     switch (action.type) {
       case 'COUNT_INCRESE':
         return {

@@ -6,8 +6,8 @@ import Summary from './Summary';
 import { Colors } from '../../constants';
 import { Image } from 'react-native';
 import Images from "../../constants/images";
-import { Provider, useSelector } from 'react-redux';
-import store from '../../redux/store/store'
+import { Provider } from 'react-redux';
+import Store from '../../redux/store/store'
 
 
 export default function CourseTaken(props: any) {
@@ -24,9 +24,9 @@ export default function CourseTaken(props: any) {
 
 
     return (
+        <Provider store={Store} >
+            <NavigationContainer independent={true} >
 
-        <NavigationContainer independent={true} >
-            {/* <Provider store={store} > */}
                 <Tab.Navigator
                     initialRouteName="Summary"
                     screenOptions={{
@@ -82,8 +82,8 @@ export default function CourseTaken(props: any) {
                         }} />
 
                 </Tab.Navigator>
-            {/* </Provider> */}
-        </NavigationContainer>
 
+            </NavigationContainer>
+        </Provider>
     )
 }

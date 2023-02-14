@@ -21,7 +21,7 @@ const initialState = {
   totalVideosWatched: 0
 }
 
-export default (state = initialState, action) => {
+export default (state = initialState, action:any) => {
   switch (action.type) {
     case 'ACTION_ADD_COURSE_SUMMARY':
       return {
@@ -31,7 +31,7 @@ export default (state = initialState, action) => {
     case 'COUNT_DECRESE':
       return {
         ...state,
-        count: state.count - 1,
+        count: state
       };
     default:
       return state;
